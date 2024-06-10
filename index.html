@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo-hoa-qua.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="gh.css" />
+    <title>Shop hoa quả</title>
+  </head>
+  <body>
+    <nav>
+      <div class="dt">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger" style="cursor: pointer"
+          >&#9776;</label
+        >
+      </div>
+      <div class="logo">
+        <a href="#">
+          <img
+            src="http://hoaqua.langsonweb.com/wp-content/uploads/2020/09/logo-hoa-qua.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="tk" id="">
+        <input type="search" placeholder="Tìm kiếm " />
+        <i class="bi bi-search"></i>
+      </div>
+      <div class="nav">
+        <div id="thoat">
+          <i class="bi bi-x-lg"></i>
+        </div>
+        <ul class="menu">
+          <li class="pd">
+            <a href="#" class="tt active pa" id="tt" onclick="trangchu()"
+              >Trang chủ</a
+            >
+          </li>
+
+          <li class="dropdown pd">
+            <!-- <div class="sp1" > -->
+            <a
+              href="#"
+              class="tt"
+              id="li"
+              style="display: flex; align-items: center; padding: 0 5px"
+            >
+              Sản phẩm
+              <i class="bi bi-chevron-down" style="cursor: pointer"></i
+            ></a>
+            <!-- <div class="len" onclick="drop()"> -->
+
+            <!-- </div> -->
+            <!-- </div> -->
+            <ul class="drop">
+              <li><a id="li" href="#nuocep">Nước uống</a></li>
+              <hr />
+              <li id="li"><a href="#nk">Trái cây nhập khẩu</a></li>
+              <hr />
+              <li id="li"><a href="#tcnd">Trái cây nội địa</a></li>
+              <hr />
+              <li id="li"><a href="#">Các loại hạt dinh dưỡng</a></li>
+              <hr />
+              <li id="li"><a href="#">Các loại rau củ quả Organic</a></li>
+              <hr />
+              <li id="li"><a href="#">Sản phẩm khác</a></li>
+            </ul>
+          </li>
+          <div class="dropp">
+            <ul class="drops">
+              <li><a id="li" href="#nuocep">Nước uống</a></li>
+              <li id="li"><a href="#nk">Trái cây nhập khẩu</a></li>
+              <li id="li"><a href="#tcnd">Trái cây nội địa</a></li>
+              <li id="li"><a href="#">Các loại hạt dinh dưỡng</a></li>
+              <li id="li"><a href="#">Các loại rau củ quả Organic</a></li>
+              <li id="li"><a href="#">Sản phẩm khác</a></li>
+            </ul>
+          </div>
+          <li class="pd"><a href="#" class="tt pa" id="tt">Giới thiệu</a></li>
+          <li class="pd">
+            <a href="#tintuc" class="tt pa" id="tt">Tin tức</a>
+          </li>
+          <li class="pd"><a href="#" class="tt pa" id="tt">Liên hệ</a></li>
+        </ul>
+      </div>
+      <li onclick="gh()">
+        <a href="#"
+          ><i class="bi bi-cart tt" id="tt" style="font-size: 20px"></i
+        ></a>
+      </li>
+    </nav>
+    <div id="than">
+      <head>
+        <div class="slick">
+          <img
+            src="https://hoaqua.langsonweb.com/wp-content/uploads/2020/09/banner-traicay.jpg"
+            alt=""
+          />
+        </div>
+      </head>
+      <br />
+      <div class="section-content">
+        <div class="banner-layers">
+          <div class="image-container">
+            <img
+              src="https://hoaqua.langsonweb.com/wp-content/uploads/2020/09/qua-1.jpg"
+              alt="Ảnh của bạn"
+            />
+          </div>
+          <div class="conten">
+            <div class="rau">
+              <h2 class="alt-font">Rau củ tươi</h2>
+            </div>
+
+            <h3>Được kiểm định rõ ràng</h3>
+          </div>
+        </div>
+        <div class="banner-layers">
+          <div class="image-container">
+            <img
+              src="https://hoaqua.langsonweb.com/wp-content/uploads/2020/09/qua2aa.jpg"
+              alt="Ảnh của bạn"
+            />
+          </div>
+          <div class="conten">
+            <h2>Thực phẩm sạch</h2>
+
+            <h3>Quy trình sản xuất kín</h3>
+          </div>
+        </div>
+        <div class="banner-layers">
+          <div class="image-container">
+            <img
+              src="https://hoaqua.langsonweb.com/wp-content/uploads/2020/09/qua-3.jpg"
+              alt="Ảnh của bạn"
+            />
+          </div>
+          <div class="conten">
+            <div class="rau">
+              <h2 class="alt-font">Trái cây tươi</h2>
+            </div>
+
+            <h3 id="nk">Nhập khẩu & Trong nước</h3>
+          </div>
+        </div>
+      </div>
+      <div class="nk">
+        <div class="container">
+          <div class="con">
+            <b></b>
+            <span class="alt-font">TRÁI CÂY NHẬP KHẨU</span>
+            <b></b>
+          </div>
+          <p>Là nhà cung cấp thực phẩm tươi sạch hàng đầu khu vực phía nam</p>
+          <br />
+        </div>
+      </div>
+      <div class="sp">
+        <div class="tc">
+          <div class="mot">
+            <div class="giamgia">-33%</div>
+            <img
+              src="https://product.hstatic.net/1000282430/product/kiwi_0cc05e9ad4f54dbd8bcf1cfd6c866772_grande.jpg"
+              alt=""
+            />
+          </div>
+          <div class="tsp">
+            <h3>Kiwi</h3>
+            <div class="price-container">
+              <p class="original-price">90.000₫</p>
+              <h4 class="discounted-price">60.000₫</h4>
+            </div>
+            <div id="toast"></div>
+            <div id="toats">
+              <button
+                onclick="showSuccessToast()"
+                data-item-name="Vải nhập khẩu"
+                data-item-price="60000"
+                data-itemImageSrc="https://product.hstatic.net/1000282430/product/kiwi_0cc05e9ad4f54dbd8bcf1cfd6c866772_grande.jpg"
+                class="addToCartBtn"
+              >
+                Mua Ngay
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hai">
+          <div class="mot">
+            <div class="giamgia">-20%</div>
+            <img
+              src="https://product.hstatic.net/1000282430/product/bong-cai-trang-large_be2e12510579422f9385a6f4e2e448d1_grande.jpg"
+              alt=""
+            />
+          </div>
+          <div class="tsp">
+            <h3>Bông Cải Trắng</h3>
+            <div class="price-container">
+              <p class="original-price">100.000₫</p>
+              <h4 class="discounted-price">80.000</h4>
+            </div>
+            <div id="toast"></div>
+            <div id="toats">
+              <button
+                onclick="showSuccessToast()"
+                data-item-name="Bông Cải Trắng"
+                data-item-price="80000"
+                data-itemImageSrc="https://product.hstatic.net/1000282430/product/bong-cai-trang-large_be2e12510579422f9385a6f4e2e448d1_grande.jpg"
+                class="addToCartBtn"
+              >
+                Mua Ngay
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hai">
+          <div class="mot">
+            <div class="giamgia">-13%</div>
+            <img
+              src="https://product.hstatic.net/1000282430/product/japanese-pumpkin-hopeland_e18894607cbf4eae893d5d452d94402e_grande.jpg"
+            />
+          </div>
+          <div class="tsp">
+            <h3>Bí Đỏ Nhật</h3>
+            <div class="price-container">
+              <p class="original-price">80.000₫</p>
+              <h4 class="discounted-price">70.000₫</h4>
+            </div>
+            <div id="toast"></div>
+            <div id="toats">
+              <button
+                onclick="showSuccessToast()"
+                data-item-name="Bí Đỏ Nhật"
+                data-item-price="70000"
+                class="addToCartBtn"
+                data-itemImageSrc="https://product.hstatic.net/1000282430/product/japanese-pumpkin-hopeland_e18894607cbf4eae893d5d452d94402e_grande.jpg"
+                id="myButton"
+              >
+                Mua Ngay
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hai">
+          <div class="mot">
+            <div class="giamgia">-10%</div>
+            <img
+              src="https://product.hstatic.net/1000282430/product/1img_9710_8bb5bacc7f194b5382a74b492d0af7b6_grande.jpg"
+            />
+          </div>
+          <div class="tsp">
+            <h3>Hành Tây Hà Lan</h3>
+            <div class="price-container">
+              <p class="original-price">200.000₫</p>
+              <h4 class="discounted-price">180.000₫</h4>
+            </div>
+            <div id="toast"></div>
+            <div id="toats">
+              <button
+                onclick="showSuccessToast()"
+                data-item-name="Hành Tây Hà Lan"
+                data-item-price="180000"
+                data-itemImageSrc="https://product.hstatic.net/1000282430/product/1img_9710_8bb5bacc7f194b5382a74b492d0af7b6_grande.jpg"
+                class="addToCartBtn"
+                id="myButton"
+              >
+                Mua Ngay
+              </button>
+            </div>
+            <div id="tcnd"></div>
+          </div>
+        </div>
+      </div>
+      <center>
+        <button class="button">
+          <span class="button-content">Mua Thêm</span>
+        </button>
+      </center>
+      <div class="tcnd">
+        <div class="container">
+          <div class="con">
+            <b></b>
+            <span>TRÁI CÂY NỘI ĐỊA</span>
+            <b></b>
+          </div>
+          <p>Có hàng ngàn mẫu hoa quả tươi đủ loại cho bạn chọn!</p>
+          <br />
+        </div>
+      </div>
+      <div class="sp">
+        <div class="tc">
+          <div class="mot">
+            <div class="giamgia">-33%</div>
+            <img
+              src="https://product.hstatic.net/1000141988/product/dua_hau_giong_my_8e1bb067b4bc48ccac351f812041be97_large.jpg"
+              alt=""
+            />
+          </div>
+          <div class="tsp">
+            <h3>Dưa hấu</h3>
+            <div class="price-container">
+              <p class="original-price">50.000₫</p>
+              <h4 class="discounted-price">35.000₫</h4>
+            </div>
+            <div id="toast"></div>
+            <div id="toats">
+              <button
+                onclick="showSuccessToast()"
+                data-item-name="Dưa hấu"
+                data-item-price="35000"
+                data-itemImageSrc="https://product.hstatic.net/1000141988/product/dua_hau_giong_my_8e1bb067b4bc48ccac351f812041be97_large.jpg"
+                class="addToCartBtn"
+              >
+                Mua Ngay
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hai">
+          <div class="mot">
+            <div class="giamgia">-20%</div>
+            <img
+              src="https://product.hstatic.net/1000141988/product/buoi_da_xanh_tui_luoi_globalgap___1.4kg_-_2kg_trai___2__52d55a80cb984d1487219de64938a4eb_large.jpg"
+            />
+          </div>
+          <div class="tsp">
+            <h3>Bưởi da xanh</h3>
+            <div class="price-container">
+              <p class="original-price">140.000₫</p>
+              <h4 class="discounted-price">120.000₫</h4>
+            </div>
+            <div id="toast"></div>
+            <div id="toats">
+              <button
+                onclick="showSuccessToast()"
+                data-item-name="Bưởi da xanh"
+                data-item-price="120000"
+                data-itemImageSrc="https://product.hstatic.net/1000141988/product/buoi_da_xanh_tui_luoi_globalgap___1.4kg_-_2kg_trai___2__52d55a80cb984d1487219de64938a4eb_large.jpg"
+                class="addToCartBtn"
+              >
+                Mua Ngay
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hai">
+          <div class="mot">
+            <div class="giamgia">-10%</div>
+            <img
+              src="https://product.hstatic.net/1000141988/product/oi_dai_loan_dbc3462e581c419fba4314618d52fa7b_large.jpg"
+            />
+          </div>
+          <div class="tsp">
+            <h3>Ổi</h3>
+            <div class="price-container">
+              <p class="original-price">30.000₫</p>
+              <h4 class="discounted-price">27.000₫</h4>
+            </div>
+            <div id="toast"></div>
+            <div id="toats">
+              <button
+                onclick="showSuccessToast()"
+                data-item-name="Ổi"
+                data-item-price="27000"
+                data-itemImageSrc="https://product.hstatic.net/1000141988/product/oi_dai_loan_dbc3462e581c419fba4314618d52fa7b_large.jpg"
+                class="addToCartBtn"
+              >
+                Mua Ngay
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hai">
+          <div class="mot">
+            <div class="giamgia">-10%</div>
+            <img
+              src="https://product.hstatic.net/1000141988/product/hang__-_web__9__e9e64ec4b61141a887095c14749d45a4_large_25ff464d9dc14a9995f9fcfbc2b2908d_large.jpg"
+              class="img1"
+            />
+          </div>
+          <div class="tsp">
+            <h3>Chuối Kid</h3>
+
+            <div class="price-container">
+              <p class="original-price">40.000₫</p>
+              <h4 class="discounted-price">36.000₫</h4>
+            </div>s
+            <div id="toast"></div>
+            <div id="toats">
+              <button
+                onclick="showSuccessToast()"
+                data-item-name="Chuối Kid"
+                data-item-price="36000"
+                data-itemImageSrc="https://product.hstatic.net/1000141988/product/hang__-_web__9__e9e64ec4b61141a887095c14749d45a4_large_25ff464d9dc14a9995f9fcfbc2b2908d_large.jpg"
+                class="addToCartBtn"
+              >
+                Mua Ngay
+              </button>
+            </div>
+            <div id="nuocep"></div>
+          </div>
+        </div>
+      </div>
+      <center>
+        <button class="button type1">
+          <span class="button-content">Mua Thêm</span>
+        </button>
+      </center>
+      <div class="nuocep">
+        <div class="container">
+          <div class="con">
+            <b></b>
+            <span>CÁC LOẠI NƯỚC UỐNG</span>
+            <b></b>
+          </div>
+          <p>Mang lại sự sản khoái khi thưởng thức nước ép tại Halona Fruits</p>
+          <br />
+        </div>
+        <div class="sp">
+          <div class="tc">
+            <div class="mot">
+              <div class="giamgia">-33%</div>
+              <img
+                src="https://product.hstatic.net/1000141988/product/___loc_6_lon___tra_len_men_star_kombucha_vi_gung_vang_-_lon_250ml_939fb396b01a452bbbcf421873b6080d_large.jpg"
+                alt=""
+              />
+            </div>
+            <div class="tsp">
+              <h3>Trà lên men</h3>
+              <div class="price-container">
+                <p class="original-price">204.000₫</p>
+                <h4 class="discounted-price">138.000₫</h4>
+              </div>
+              <div id="toast"></div>
+              <div id="toats">
+                <button
+                  onclick="showSuccessToast()"
+                  data-item-name="Trà lên men"
+                  data-item-price="138000"
+                  data-itemImageSrc="https://product.hstatic.net/1000141988/product/___loc_6_lon___tra_len_men_star_kombucha_vi_gung_vang_-_lon_250ml_939fb396b01a452bbbcf421873b6080d_large.jpg"
+                  class="addToCartBtn"
+                >
+                  Mua Ngay
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hai">
+            <div class="mot">
+              <div class="giamgia">-20%</div>
+              <img
+                src="https://product.hstatic.net/1000141988/product/__loc_6_lon___nuoc_ngot_mirinda_soda_kem_320_ml_0774f0fae5d14c26828143ad7cb95bc7_large.jpg"
+                alt=""
+              />
+            </div>
+            <div class="tsp">
+              <h3>Nước ngọt Mirinda</h3>
+              <div class="price-container">
+                <p class="original-price">90.000₫</p>
+                <h4 class="discounted-price">72.000₫</h4>
+              </div>
+              <div id="toast"></div>
+              <div id="toats">
+                <button
+                  onclick="showSuccessToast()"
+                  data-item-name="Nước ngọt Mirinda Soda"
+                  data-item-price="72000"
+                  data-itemImageSrc="https://product.hstatic.net/1000141988/product/__loc_6_lon___nuoc_ngot_mirinda_soda_kem_320_ml_0774f0fae5d14c26828143ad7cb95bc7_large.jpg"
+                  class="addToCartBtn"
+                >
+                  Mua Ngay
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hai">
+            <div class="mot">
+              <div class="giamgia">-13%</div>
+              <img
+                src="https://product.hstatic.net/1000141988/product/nuoc_tao_ep_vfresh_1l_6783d2c6ffd049e9846579551f3989f1_large.jpg"
+              />
+            </div>
+            <div class="tsp">
+              <h3>Nước táo ép</h3>
+              <div class="price-container">
+                <p class="original-price">60.000₫</p>
+                <h4 class="discounted-price">52.000₫</h4>
+              </div>
+              <div id="toast"></div>
+              <div id="toats">
+                <button
+                  onclick="showSuccessToast()"
+                  data-item-name="Nước táo ép VFresh"
+                  data-item-price="52000"
+                  class="addToCartBtn"
+                  data-itemImageSrc="https://product.hstatic.net/1000141988/product/nuoc_tao_ep_vfresh_1l_6783d2c6ffd049e9846579551f3989f1_large.jpg"
+                >
+                  Mua Ngay
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hai">
+            <div class="mot">
+              <div class="giamgia">-10%</div>
+              <img
+                src="https://product.hstatic.net/1000141988/product/nuoc_trai_cay_sua_latte_vi_dao_345_ml_1a828b7c2e774bc9ab6514cf6a9d4dfe_large.jpg"
+              />
+            </div>
+            <div class="tsp">
+              <h3>Nước Latte vị đào</h3>
+              <div class="price-container">
+                <p class="original-price">20.000₫</p>
+                <h4 class="discounted-price">18.000₫</h4>
+              </div>
+              <div class="muangay">
+                <div id="toast"></div>
+                <div id="toats">
+                  <button
+                    onclick="showSuccessToast()"
+                    data-item-name="Nước trái cây Latte vị đào"
+                    data-item-price="18000"
+                    data-itemImageSrc="https://product.hstatic.net/1000141988/product/nuoc_trai_cay_sua_latte_vi_dao_345_ml_1a828b7c2e774bc9ab6514cf6a9d4dfe_large.jpg"
+                    class="addToCartBtn"
+                  >
+                    Mua Ngay
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <center>
+          <button class="button type1">
+            <span class="button-content" id="tintuc">Mua Thêm </span>
+          </button>
+        </center>
+      </div>
+      <div class="tintuc">
+        <div class="tt1">
+          <div class="ttt">
+            <b></b>
+            <span>Tin tức</span>
+            <b></b>
+          </div>
+          <div class="tintuc-conten">
+            <div class="consten">
+              <img
+                src="https://hoaqua.langsonweb.com/wp-content/uploads/2020/09/blog-img-6.jpg"
+                alt=""
+              />
+              <div class="chu">
+                <h5>Kỹ thuật trồng rau sạch trong chậu xốp tại nhà đơn giản</h5>
+                <label for="">15/08/2023</label>
+                <hr />
+                <p>
+                  Tự trồng rau trong thùng xốp tại nhà là sự lựa chọn của rất
+                  nhiều gia đình trong thành phố bởi phương pháp trồng rau đơn
+                  giản, dễ trồng, dễ quản lý, an toàn và tiện lợi. Nhưng người
+                  trồng cũng ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tintuc-conten">
+            <div class="consten">
+              <img
+                src="https://hoaqua.langsonweb.com/wp-content/uploads/2020/09/qua-3.jpg"
+                alt=""
+              />
+              <div class="chu">
+                <h5>
+                  Eat Clean bí kíp để có thân hình xinh như mơ của cô nàng 9x
+                </h5>
+                <label for="">15/08/2023</label>
+                <hr />
+                <p>
+                  Đối với nhiều người, “Eat Clean” vẫn còn mơ hồ như một đích
+                  đến xa xăm thì đối với cô gái 9x này hai từ ấy đã trở thành
+                  một phần của cuộc sống hàng ngày Trong bài viết được đăng ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tintuc-conten">
+            <div class="consten">
+              <img
+                src="https://hoaqua.langsonweb.com/wp-content/uploads/2020/09/qua-1.jpg"
+                alt=""
+              />
+              <div class="chu">
+                <h5>
+                  Lấy lại vòng eo con kiến nhờ công thức đơn giản từ củ đậu và
+                  rau cải
+                </h5>
+                <label for="">15/08/2023</label>
+                <hr />
+                <p>
+                  Bụng mỡ nhiều đến mấy cũng trở nên phẳng lỳ với công thức từ
+                  củ đậu và rau cải mỗi ngày, hãy tham khảo cách làm dưới đây
+                  nhé! Chẳng cần tập luyện hay kiêng khem khổ cực, bạn có thể
+                  ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tintuc-conten">
+            <div class="consten">
+              <img
+                src="https://hoaqua.langsonweb.com/wp-content/uploads/2020/09/qua2aa.jpg"
+                alt=""
+              />
+              <div class="chu">
+                <h5>
+                  KM: Tháng giải phóng mỡ thừa, da xấu, độc tố trong cơ thể
+                </h5>
+                <label for="">15/08/2023</label>
+                <hr />
+                <p>
+                  Tháng 4, hoà trong không khí giải phóng dân tộc, đối với chúng
+                  tôi, đây là tháng: GIẢI PHÓNG MỠ THỪA, KHÔNG CHỪA 1 LẠNG Kế
+                  hoạch cho những ngày nghỉ lớn của tháng 4 đã sẵn sàng, tuy
+                  nhiên bạn ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lh">
+          <form action="">
+            <h3>Liên hệ tư vấn khách hàng</h3>
+            <div class="name">
+              <input type="text" id="name" placeholder="Họ tên của bạn " />
+              <p id="name-error"></p>
+            </div>
+            <div class="name">
+              <input type="text" id="sdt" placeholder="Số điện thoại  " />
+              <p id="sdt-error"></p>
+            </div>
+            <textarea
+              name=""
+              id="nd"
+              cols="40"
+              rows="7"
+              placeholder="Nội dung cần tư vấn "
+            ></textarea>
+            <p id="text-error"></p>
+            <br />
+            <div class="buttonnn">
+              <button type="button" id="subit">Gửi liên hệ</button>
+            </div>
+          </form>
+          <div class="iframe">
+            <iframe
+              width="358"
+              height="210"
+              class="yt"
+              src="https://www.youtube.com/embed/i493IC18WvY"
+              title="Imovie sample video fruits film clip ( HD)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gh" id="gh">
+      <div class="chua-sp">
+        <p style="margin-top: 50px; font-size: 17px" class="spp-p">
+          Chưa có sản phẩm nào trong giỏ hàng.
+        </p>
+        <button class="buttonn" onclick="quaylai()">
+          Quay trở lại cửa hàng
+        </button>
+      </div>
+
+      <div class="spp">
+        <form action="">
+          <table>
+            <thead>
+              <tr>
+                <th
+                  class="product th left"
+                  colspan="3"
+                  style="padding-right: 200px"
+                >
+                  Sản phẩm
+                </th>
+                <th class="product-prices th center block">Giá</th>
+                <th class="product-quantity">Số lượng</th>
+                <th class="product-subtotal right block">Tổng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="cart-item">
+                <td>
+                  <div class="remote">
+                    <p>x</p>
+                  </div>
+                </td>
+                <td class="product-thumbnail th"></td>
+                <td class="product-name nk">Vải nhập khẩu</td>
+                <td class="product-price amount th"></td>
+                <td class="quantity th">
+                  <button class="is-form minus" type="button">-</button>
+                  <input
+                    type="text"
+                    class="input-qty"
+                    step="1"
+                    min="0"
+                    max="100"
+                    value="1"
+                  />
+                  <button class="is-form plus" type="button">+</button>
+                </td>
+                <td class="product-price amount tong right">
+                  <p></p>
+                </td>
+                <br />
+              </tr>
+            </tbody>
+          </table>
+          <button class="muasam" onclick="ttms()">
+            <i class="bi bi-arrow-left"></i> Tiếp tục mua sắp
+          </button>
+
+          <button class="cn" type="button" onclick="capnhat()">
+            Cập nhật giỏ hàng
+          </button>
+        </form>
+        <div class="thanhtoan">
+          <div class="tinhtong">
+            <h4>Tính tổng đơn hàng</h4>
+          </div>
+          <div class="tongs">
+            <div class="tongphu">
+              <p>Tiền vận chuyển</p>
+              <h4>30.000₫</h4>
+            </div>
+            <div class="tongss">
+              <p>Tổng thanh toán</p>
+              <h4 class="tong-h4 right"></h4>
+            </div>
+          </div>
+          <div class="pay">
+            <button class="thtt" onclick="thtt()">Tiến hành thanh toán</button>
+            <br />
+            <button class="uudai">
+              <i class="bi bi-tag-fill"></i>Phiếu ưu đãi</button
+            ><br />
+            <input type="text" placeholder="Mã ưu đãi" /><br />
+            <button class="ad">Áp dụng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thongtin" id="thongtin">
+      <div id="t">
+        <form action="" class="form">
+          <div class="no">
+            <div class="p">* Bắt buộc nhập</div>
+            <p id="ten-loi"></p>
+            <p id="dc-loi"></p>
+            <p id="tp-loi"></p>
+            <p id="sdt-loi"></p>
+            <p class="error" id="errorMessage" style="font-size: 18px"></p>
+          </div>
+
+          <h3 style="margin-bottom: 8px">Thông tin thanh toán</h3>
+          <label for="name">Họ và tên * </label>
+          <input
+            type="text"
+            id="product-name"
+            placeholder="Họ và tên"
+            onblur="hoteen()"
+            class="input"
+          />
+          <label for="name">Tên công ty </label>
+
+          <input
+            type="text"
+            id="product-tency"
+            placeholder="Tên công ty"
+            class="input"
+          />
+          <label for="dc">Địa chỉ *</label>
+          <input
+            type="text"
+            placeholder="Địa chỉ"
+            id="product-dc"
+            onblur="diachi()"
+            class="input"
+          />
+          <label for="name">Tỉnh thành phố *</label>
+          <input
+            type="text"
+            id="product-tp"
+            placeholder="Tỉnh thành phố"
+            onblur="thanhpho()"
+            class="input"
+          />
+          <label for="name">Số điện thoại *</label>
+          <input
+            type="text"
+            id="product-sdt"
+            placeholder="Số điện thoại "
+            onblur="dienthoai()"
+            class="input"
+          />
+          <h3>Thông tin bổ sung</h3>
+          <label for="">Ghi chú bổ sung</label>
+          <textarea
+            name=""
+            id="textt"
+            cols="2"
+            rows="5"
+            placeholder="Ghi chú về đơn hàng, ví dụ: thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn."
+            class="input"
+          ></textarea>
+        </form>
+        <div class="donhang">
+          <h3>ĐƠN HÀNG CỦA BẠN</h3>
+          <table>
+            <thead>
+              <tr class="">
+                <th class="product-sp product">Sản phẩm</th>
+                <th class="product-total product">Tổng</th>
+              </tr>
+            </thead>
+            <tbody class="cart1">
+              <tr class="cart">
+                <!-- <td id="tt-name">
+                    Cà chua <strong class="tt-quantity">x1</strong>
+                  </td>
+                  <td>90.000&</td> -->
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="tvc">
+                <th class="left">Tiền vận chuyển</th>
+                <td class="right">30.000₫</td>
+              </tr>
+              <tr class="tvc" style="border-bottom: 2px solid #ccc">
+                <th>Tổng thanh toán</th>
+                <td id="product-totals">30.000₫</td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="pttt">
+            <input type="radio" name="tt" id="ck" class="ck" checked />
+            <label for="" id="ttck">Thanh toán chuyển khoản</label><br />
+            <input type="radio" name="tt" id="tm" class="ck" />
+            <label for=""> Trả tiền mặt khi nhận hàng</label>
+          </div>
+          <button class="dathang" onclick="muangay()" type="button">
+            Đặt hàng
+          </button>
+          <p style="font-size: 15px; max-width: 660px">
+            Your personal data will be used to process your order, support your
+            experience throughout this website, and for other purposes described
+            in our <span class="span">chính sách riêng tư.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="chitiet">
+      <div class="chitiett">
+        <h2>Đơn hàng của bạn</h2>
+        <table>
+          <thead>
+            <tr class="">
+              <th class="left chitiet-p">Sản phẩm</th>
+              <th class="right">Tổng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="left chitiet-p">
+                <p>Cà chua Đà Lạt <strong>x1</strong></p>
+              </td>
+              <td class="right">
+                <span>20.000d</span>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th class="left chitiet-p">Tiền vận chuyển</th>
+              <td class="right">340.000₫</td>
+            </tr>
+            <tr>
+              <th class="left chitiet-p">Phương thức thanh toán:</th>
+              <td class="right">Chuyển khoản ngân hàng</td>
+            </tr>
+            <tr>
+              <th class="left chitiet-p">Tổng cộng:</th>
+              <td class="right">340.000₫</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <div class="ft">
+        <div class="gt">
+          <img
+            src="https://hoaqua.langsonweb.com/wp-content/uploads/2020/09/logo-hoa-qua.png"
+            alt=""
+          />
+          <h3>Về chúng tôi</h3>
+          <p>
+            Chuyên cung cấp các loại hoa quả nhập khẩu, nội địa và các loại thực
+            phẩm từ thiên nhiên.
+          </p>
+        </div>
+        <div class="footer-lh">
+          <h3>Liên hệ</h3>
+          <p><i class="bi bi-house"></i> 335 Cầu Giấy, Hà Nội</p>
+          <p><i class="bi bi-telephone"></i>0986.989.626 - 0986.989.626</p>
+          <p><i class="bi bi-envelope"></i>topweb.com.vn@gmail.com</p>
+          <p><i class="bi bi-facebook"></i> fb.com/topweb.com.vn</p>
+        </div>
+        <div class="footer-tt">
+          <h3>Tin tức</h3>
+          <p>Kỹ thuật trồng rau sạch trong chậu xốp tại nhà đơn giản</p>
+          <p>Eat Clean – bí kíp để có thân hình xinh như mơ của cô nàng 9x</p>
+          <p>
+            Lấy lại vòng eo con kiến nhờ công thức đơn giản từ củ đậu và rau cải
+          </p>
+          <p>KM: Tháng giải phóng mỡ thừa, da xấu, độc tố trong cơ thể</p>
+        </div>
+        <div class="footer-toi">
+          <h3>VỀ CHÚNG TÔI</h3>
+          <p>Giới thiệu</p>
+          <p>Lĩnh vực hoạt động</p>
+          <p>Chính sách chất lượng</p>
+          <p>Triết lí kinh doanh</p>
+          <p>Năng lực - cơ sở vật chất</p>
+        </div>
+      </div>
+    </footer>
+    <div class="tg">
+      <p>Copyright 2023 © Lương Thành quang</p>
+    </div>
+    <div class="liehe">
+      <div class="fb">Chat Facebook</div>
+      <div class="sdt">
+        <p><i class="bi bi-telephone"></i>0986.989.626</p>
+      </div>
+      <div class="sdt1">
+        <p><i class="bi bi-telephone"></i>Gọi điện</p>
+      </div>
+    </div>
+    <button id="scrollToTopButton" class="scroll-btn">↑</button>
+    <div class="loading"></div>
+    <script src="main.js"></script>
+  </body>
+</html>

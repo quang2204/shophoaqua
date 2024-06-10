@@ -1,0 +1,472 @@
+.gh {
+    padding: 20px 20px 40px 10px;
+    background-color: white;
+    margin-top: 6px;
+    display: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.product-price {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.spp {
+    display: flex;
+    justify-content: center;
+}
+
+.spp form {
+    padding: 10px;
+    border-right: 2px solid #e8eae5;
+    margin-top: -35px;
+    padding-right: 30px;
+}
+
+.spp img {
+    max-width: 80px;
+
+}
+
+.right {
+    text-align: right;
+}
+
+.th {
+    padding: 19px 18px;
+}
+
+
+.product-name {
+    color: #669933;
+}
+
+.remote {
+    width: 24px;
+    height: 23px;
+    border-radius: 50%;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.remote p {
+    margin-top: -5px;
+}
+
+.remote:hover {
+    opacity: 1;
+}
+
+.amount {
+    font-weight: bold;
+}
+
+
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+
+
+.nk {
+    padding: 0 10px;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.quantity .input-qty {
+    width: 40px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 0px;
+    border-right: 0px;
+    height: 30px;
+    outline: none;
+}
+
+.muasam {
+    margin-top: 13px;
+    width: 227px;
+    height: 35px;
+    border: 2px solid #669933;
+    background-color: white;
+    color: #669933;
+    font-size: 17px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.product-subtotal {
+    padding-left: 60px;
+}
+
+.pading {
+    padding-right: 202px;
+}
+
+.muasam:hover {
+    background-color: #669933;
+    color: white;
+
+}
+
+.thanhtoan {
+    margin-top: 17px;
+    margin-left: 30px;
+}
+
+.cn {
+    width: 178px;
+    height: 35px;
+    border: none;
+    background-color: #a3c285;
+    color: white;
+    margin-left: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.cn:hover {
+    background-color: #669933;
+}
+
+.tinhtong {
+    padding-bottom: 17px;
+    font-size: 19px;
+    border-bottom: 3px solid rgb(230, 225, 225);
+    width: 100%;
+}
+
+.tongphu,
+.tongss {
+    display: flex;
+    border-bottom: 3px solid rgb(230, 225, 225);
+    padding-bottom: 5px;
+    justify-content: space-between;
+}
+
+.tongphu {
+    padding-top: 23px;
+
+}
+
+.tongphu h4 {
+    margin-left: 247px;
+}
+
+.tongss {
+    padding-top: 10px;
+}
+
+
+
+.thtt {
+    margin-top: 24px;
+    width: 100%;
+    height: 39px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.uudai {
+    margin-top: 27px;
+    border: 0;
+    color: white;
+    background-color: #669933;
+    width: 100%;
+    height: 39px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.uudai i {
+
+    opacity: 0.35;
+}
+
+.pay input {
+    margin-top: 17px;
+    border: 2px solid #d9dcd5;
+    outline: none;
+    width: 100%;
+    height: 39px;
+    padding: 0 0.75em;
+    font-size: .97em;
+}
+
+.pay input:focus {
+    box-shadow: 0 0 5px #ccc;
+}
+
+.ad {
+    width: 100%;
+    height: 39px;
+    margin-top: 17px;
+    border: 1px solid #ddd;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ad:hover {
+    text-shadow: 1px 1px 1px #fff;
+    box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+
+.thongtin {
+    display: none;
+    background-color: white;
+    margin-top: 5px;
+}
+
+#t {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.no {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d8dad6;
+}
+
+.p {
+    color: #669933;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.donhang {
+    max-width: 442px;
+    width: 100%;
+    padding: 0 32px 30px 32px;
+    border: 2px solid #669933;
+    margin-left: 30px;
+}
+
+.donhang h3 {
+    padding: 20px 0;
+}
+
+.left {
+    text-align: left;
+}
+
+.donhang tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+}
+
+.cart {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+tr {
+    border-bottom: 1px solid #ccc;
+
+}
+
+.tvc {
+    border-bottom: 2px solid #eae5e5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.product {
+    margin-top: -10px;
+    padding-bottom: 5px;
+}
+
+.sp1 {
+    padding: 1px 10px;
+}
+
+.thongtin form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 124px;
+    width: 100%;
+    max-width: 660px;
+}
+
+.input {
+    padding: 10px 10px;
+    margin-bottom: 30px;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.form input:focus {
+    box-shadow: 0 0 5px #ccc;
+}
+
+.form input:hover {
+    box-shadow: 0 0 0px #ccc;
+}
+
+
+.form textarea {
+    max-width: 652px;
+    min-height: 120px;
+    max-height: 150px;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.form label {
+    margin-bottom: 7px;
+}
+
+.product-sp {
+    text-align: left;
+}
+
+.product-total {
+    text-align: right;
+}
+
+.dh {
+    padding-bottom: 10px;
+}
+
+.item td {
+    padding: 12px 0;
+}
+
+.dathang {
+    width: 119px;
+    height: 39px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.pttt {
+    margin-bottom: 30px;
+}
+
+.ck {
+    margin-top: 15px;
+
+}
+
+.span {
+    color: #669933;
+}
+
+.span:hover {
+    color: black;
+}
+
+.error {
+    color: red;
+}
+
+#ten-loi,
+#dc-loi,
+#tp-loi,
+#sdt-loi {
+    color: red;
+    font-size: 17px;
+}
+
+
+
+.chua-sp {
+    margin-top: 74px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.buttonn {
+    position: relative;
+    margin-top: 20px;
+    font-size: 17px;
+    width: 229px;
+    height: 39px;
+    border: 0;
+    background-color: #669933;
+    color: white;
+    cursor: pointer;
+}
+
+.chitiett {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    margin-top: 40px;
+    margin-left: 440px;
+    margin-bottom: 90px;
+}
+
+.chitiet {
+    display: none;
+}
+
+.chitiet-p {
+    padding: 10px 2px;
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 3px solid white;
+    border-top-color: #669933;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
